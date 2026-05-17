@@ -55,6 +55,8 @@ ul{list-style:none}
 .social-link svg{width:30px;height:30px;fill:currentColor;display:block}
 .social-link span{font-size:.95rem}
 .social-link:hover{color:#3b8bff;transform:translateY(-2px)}
+.nav-links .social-link{color:#1877F2}
+.nav-links .social-link:hover{color:#3b8bff}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;z-index:1001}
 .nav-toggle span{display:block;width:24px;height:2px;background:var(--slate);border-radius:2px;transition:.3s ease}
 .nav-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
