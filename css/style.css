@@ -44,8 +44,8 @@ ul{list-style:none}
 .nav-logo{font-family:var(--font-d);font-weight:800;font-size:1.3rem;color:var(--cyan-bright);display:flex;align-items:center;gap:.6rem}
 .nav-logo img{height:42px;width:auto;border-radius:8px}
 .nav-logo span{background:linear-gradient(135deg,var(--cyan-bright),var(--purple-bright));-webkit-background-clip:text;background-clip:text;color:transparent}
-.nav-links{display:flex;gap:2.2rem;align-items:center}
-.nav-links a{font-family:var(--font-d);font-size:.88rem;font-weight:500;color:var(--steel-light);transition:.3s ease;position:relative}
+.nav-links{display:flex;gap:1.6rem;align-items:center}
+.nav-links a{font-family:var(--font-d);font-size:.88rem;font-weight:500;color:var(--steel-light);transition:.3s ease;position:relative;white-space:nowrap}
 .nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan));transition:.3s ease;border-radius:1px}
 .nav-links a:hover{color:var(--pure)}
 .nav-links a:not(.nav-cta):hover::after{width:100%}
