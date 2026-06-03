@@ -41,11 +41,11 @@ ul{list-style:none}
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;transition:all .4s ease}
 .nav.scrolled{background:rgba(8,14,26,.95);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(124,58,237,.15);padding:.6rem 0}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:var(--container);margin:0 auto}
-.nav-logo{font-family:var(--font-d);font-weight:800;font-size:1.3rem;color:var(--cyan-bright);display:flex;align-items:center;gap:.6rem}
+.nav-logo{font-family:var(--font-d);font-weight:800;font-size:1.3rem;color:var(--cyan-bright);display:flex;align-items:center;gap:.6rem;white-space:nowrap;flex-shrink:0}
 .nav-logo img{height:42px;width:auto;border-radius:8px}
 .nav-logo span{background:linear-gradient(135deg,var(--cyan-bright),var(--purple-bright));-webkit-background-clip:text;background-clip:text;color:transparent}
-.nav-links{display:flex;gap:2.2rem;align-items:center}
-.nav-links a{font-family:var(--font-d);font-size:.88rem;font-weight:500;color:var(--steel-light);transition:.3s ease;position:relative}
+.nav-links{display:flex;gap:1.5rem;align-items:center;flex-wrap:nowrap}
+.nav-links a{font-family:var(--font-d);font-size:.88rem;font-weight:500;color:var(--steel-light);transition:.3s ease;position:relative;white-space:nowrap}
 .nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan));transition:.3s ease;border-radius:1px}
 .nav-links a:hover{color:var(--pure)}
 .nav-links a:not(.nav-cta):hover::after{width:100%}
@@ -278,10 +278,12 @@ ul{list-style:none}
   .about-visual{order:-1}.about-stats{max-width:400px;margin:2rem auto 0}
   .label{justify-content:center}
 }
-@media(max-width:768px){
+@media(max-width:1024px){
   .nav-links{display:none}
   .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(8,14,26,.97);backdrop-filter:blur(24px);justify-content:center;align-items:center;gap:2rem;z-index:999}
   .nav-links.open a{font-size:1.3rem}.nav-toggle{display:flex}
+}
+@media(max-width:768px){
   .venues-grid{grid-template-columns:1fr}
   .venues-grid .venue:last-child{grid-column:auto;max-width:100%}
   .footer-inner{flex-direction:column;text-align:center}
