@@ -300,31 +300,30 @@ ul{list-style:none}
 }
 
 /* ---- TESTIMONIALS ---- */
-.testimonials{padding:var(--pad) 0;position:relative}
-.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.8rem;max-width:760px;margin:0 auto;justify-content:center}
-.testimonial{position:relative;display:flex;flex-direction:column;background:linear-gradient(160deg,rgba(17,28,51,.7),rgba(12,20,37,.85));border:1px solid rgba(124,58,237,.08);border-radius:14px;padding:2.5rem 2rem 2rem;overflow:hidden;transition:all .4s ease}
+.testimonials{padding:clamp(3rem,6vw,5rem) 0;position:relative}
+.testimonials .section-head{margin-bottom:2.5rem}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;max-width:760px;margin:0 auto;justify-content:center;align-items:start}
+.testimonial{position:relative;display:flex;flex-direction:column;background:linear-gradient(160deg,rgba(17,28,51,.7),rgba(12,20,37,.85));border:1px solid rgba(124,58,237,.08);border-radius:14px;padding:1.6rem 1.6rem 1.4rem;overflow:hidden;transition:all .4s ease}
 .testimonial::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;opacity:0;transition:.4s ease}
 .testimonial:nth-child(1)::after{background:var(--gold)}
 .testimonial:nth-child(2)::after{background:var(--cyan)}
 .testimonial:nth-child(3)::after{background:var(--purple)}
 .testimonial:hover{transform:translateY(-6px);border-color:rgba(124,58,237,.2);box-shadow:0 20px 50px rgba(0,0,0,.3)}
 .testimonial:hover::after{opacity:1}
-.t-quote{position:absolute;top:.6rem;right:1.4rem;font-family:var(--font-d);font-size:5rem;font-weight:900;line-height:1;color:rgba(124,58,237,.18);pointer-events:none;user-select:none}
-.t-stars{position:relative;z-index:1;font-size:1.15rem;letter-spacing:.22em;color:var(--gold-bright);margin-bottom:1.2rem}
-.t-body{position:relative;z-index:1;font-family:var(--font-b);font-size:1.02rem;line-height:1.75;color:var(--cloud);font-style:italic;margin-bottom:1.8rem;flex:1}
-.t-author{display:flex;align-items:center;gap:1rem;padding-top:1.3rem;border-top:1px solid rgba(124,58,237,.1)}
-.t-avatar{flex-shrink:0;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.3rem;font-weight:800;color:var(--pure);background:linear-gradient(135deg,var(--purple),var(--cyan));box-shadow:0 6px 18px rgba(124,58,237,.3)}
+.t-quote{position:absolute;top:.2rem;right:1.1rem;font-family:var(--font-d);font-size:3.2rem;font-weight:900;line-height:1;color:rgba(124,58,237,.16);pointer-events:none;user-select:none}
+.t-body{position:relative;z-index:1;font-family:var(--font-b);font-size:.94rem;line-height:1.6;color:var(--cloud);font-style:italic;margin-bottom:1.2rem;padding-right:1.5rem}
+.t-author{display:flex;align-items:center;gap:.8rem;padding-top:1rem;border-top:1px solid rgba(124,58,237,.1)}
+.t-avatar{flex-shrink:0;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.1rem;font-weight:800;color:var(--pure);background:linear-gradient(135deg,var(--purple),var(--cyan));box-shadow:0 6px 18px rgba(124,58,237,.3)}
 .testimonial:nth-child(2) .t-avatar{background:linear-gradient(135deg,var(--cyan),var(--cyan-dark))}
 .testimonial:nth-child(3) .t-avatar{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy-abyss)}
 .t-author-info{text-align:left}
-.t-name{font-family:var(--font-d);font-size:1.05rem;font-weight:700;color:var(--pure);line-height:1.2}
-.t-role{font-size:.85rem;color:var(--steel-light);margin-top:.15rem}
+.t-name{font-family:var(--font-d);font-size:.98rem;font-weight:700;color:var(--pure);line-height:1.2}
+.t-role{font-size:.8rem;color:var(--steel-light);margin-top:.15rem}
 @media(max-width:768px){
-  .testimonial-grid{grid-template-columns:1fr;max-width:480px}
-  .testimonial{padding:2.2rem 1.6rem 1.8rem}
+  .testimonial-grid{grid-template-columns:1fr;max-width:460px}
+  .testimonial{padding:1.5rem 1.4rem 1.3rem}
 }
 @media(max-width:480px){
-  .t-body{font-size:.98rem}
-  .t-quote{font-size:4rem;top:.4rem;right:1rem}
-  .t-avatar{width:46px;height:46px;font-size:1.15rem}
+  .t-quote{font-size:2.6rem;top:.1rem;right:.9rem}
+  .t-avatar{width:40px;height:40px;font-size:1.05rem}
 }
