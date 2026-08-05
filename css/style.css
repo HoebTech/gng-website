@@ -252,7 +252,7 @@ ul{list-style:none}
 .footer-powered{font-size:.78rem;color:var(--steel)}
 .footer-powered a{color:var(--steel-light);transition:.3s ease}
 .footer-powered a:hover{color:var(--cyan)}
-.footer-links{display:flex;gap:2rem}
+.footer-links{display:flex;flex-wrap:wrap;gap:2rem}
 .footer-links a{font-size:.83rem;color:var(--steel);transition:.3s ease}
 .footer-links a:hover{color:var(--purple-bright)}
 .footer-links .social-link{color:#1877F2}
@@ -287,6 +287,7 @@ ul{list-style:none}
   .venues-grid{grid-template-columns:1fr}
   .venues-grid .venue:last-child{grid-column:auto;max-width:100%}
   .footer-inner{flex-direction:column;text-align:center}
+  .footer-links{justify-content:center}
   .cta-card{padding:3rem 2rem}
   .merch-card{flex-direction:column;text-align:center;padding:2rem}
   .merch-text{flex-direction:column;justify-content:center}
