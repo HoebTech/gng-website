@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-nav.offsetHeight-16,behavior:'smooth'})}
     });
   });
+  document.querySelectorAll('[data-arcade]').forEach(a=>a.addEventListener('click',()=>{if(window.posthog&&posthog.capture)posthog.capture('arcade_link_clicked',{location:a.dataset.arcade})}));
   const yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
 });
